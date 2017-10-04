@@ -1,0 +1,29 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "flash card homework",
+  "main": "BasicCard.js",
+  "dependencies": {
+    "inquirer": "^3.3.0",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NLegge/Flashcard-Generator.git"
+  },
+  "keywords": [
+    "basic",
+    "card",
+    "cloze"
+  ],
+  "author": "Nicki Legge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NLegge/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/NLegge/Flashcard-Generator#readme"
+}

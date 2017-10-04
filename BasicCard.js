@@ -1,17 +1,8 @@
-//basic card constructor
+//Basic card constructor
 var BasicCard = function(front, back) {
   this.front = front;
   this.back = back;
 }
 
-var firstPresident = new BasicCard(
-  "Who was the first president of the United States?", "George Washington");
-
-// "Who was the first president of the United States?"
-console.log(firstPresident.front); 
-
-// "George Washington"
-console.log(firstPresident.back); 
-
-//export BasicCard for use by other documents
+//Export BasicCard for use by other documents
 module.exports = BasicCard;
