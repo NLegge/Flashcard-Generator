@@ -37,14 +37,13 @@ function createCloze() {
       name: "cloze"
     },
   ]).then(function(answers) {
-  	if (answers.fullText.includes(answers.cloze)) {
-  	  //Create a new cloze card using the ClozeCard constructor and print to the console.
-      var newCard = new ClozeCard(answers.fullText, answers.cloze);
-      console.log(newCard.cloze);
-      console.log(newCard.partial);
-      console.log(newCard.fullText);
+  	//Create a new cloze card using the ClozeCard constructor and print to the console.
+    var newCard = new ClozeCard(answers.fullText, answers.cloze);
+      if (newCard.fullText === newCard.partial) {
+      	console.log("*****Invalid entry.*****"); 
   	} else {
-  	  console.log("Your statement does not include that answer."); 
+  	    console.log(newCard.partial);
+        console.log(newCard.cloze);
   	}
   	another();
   });
